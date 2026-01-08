@@ -22,9 +22,6 @@ on:
   repository_dispatch:
     types: [setup]
   workflow_dispatch:
-permissions:
-  contents: read
-  issues: write
 jobs:
   release:
     name: Setup Upptime
