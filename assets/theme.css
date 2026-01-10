@@ -1,0 +1,70 @@
+:root {
+  /* Your palette */
+  --c0: #211F1F; /* background */
+  --c1: #250000; /* surface */
+  --c2: #730000; /* accent/danger */
+  --c3: #c9b1b1; /* text-muted */
+  --c4: #a05b5b; /* secondary accent */
+
+  /* Base */
+  background-color: var(--c0);
+  color: #ffffff;
+
+  /* Sensible defaults used across the site */
+  --background: var(--c0);
+  --card-background: var(--c1);
+  --text: #ffffff;
+  --text-muted: var(--c3);
+  --border: rgba(201, 177, 177, 0.25);
+
+  --primary: var(--c2);
+  --primary-hover: var(--c4);
+  --link: var(--c4);
+}
+
+/* Page background */
+body {
+  background: var(--c0) !important;
+  color: #ffffff !important;
+}
+
+/* Cards / panels */
+main, section, .container, .card, .box, .markdown, .shadow {
+  background: var(--c1) !important;
+  border-color: rgba(201, 177, 177, 0.20) !important;
+}
+
+/* Headings and normal text */
+h1, h2, h3, h4, h5, h6, p, li, small, span, div {
+  color: inherit;
+}
+
+/* Links */
+a {
+  color: var(--link) !important;
+}
+a:hover {
+  color: var(--primary) !important;
+}
+
+/* Buttons */
+button, .button, a.button, input[type="submit"] {
+  background: var(--primary) !important;
+  color: #fff !important;
+  border: 1px solid rgba(201, 177, 177, 0.25) !important;
+}
+button:hover, .button:hover, a.button:hover {
+  background: var(--primary-hover) !important;
+}
+
+/* Badges / status chips */
+.badge, .tag, .pill {
+  background: rgba(115, 0, 0, 0.25) !important;
+  border: 1px solid rgba(201, 177, 177, 0.25) !important;
+  color: #fff !important;
+}
+
+/* Graph/legend text if present */
+svg text {
+  fill: #ffffff !important;
+}
