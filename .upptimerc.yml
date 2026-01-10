@@ -12,7 +12,7 @@ workflowSchedule:
   updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
   uptime: "*/20 * * * *"
-  
+
 sites:
   - name: Company Website
     url: https://doubleextortion.com
@@ -52,29 +52,31 @@ status-website:
     - title: Website
       href: https://digintlab.com/
   js: |
-      window.addEventListener("load", () => {
-        const kill = () => {
-          // 1) Remove incident sections by heading text
-          document.querySelectorAll("section").forEach((s) => {
-            const h = s.querySelector("h2,h3");
-            const t = (h?.textContent || "").toLowerCase();
-            if (t.includes("active incidents") || t.includes("past incidents")) s.remove();
-          });
-  
-          // 2) Hide any nav links/tabs that include "Incidents"
-          document.querySelectorAll("a,button").forEach((el) => {
-            const t = (el.textContent || "").toLowerCase();
-            if (t.includes("incidents")) el.style.display = "none";
-          });
-  
-          // 3) Remove the Upptime footer branding
-          document.querySelectorAll("footer").forEach((f) => {
-            const t = (f.textContent || "").toLowerCase();
-            if (t.includes("upptime") || t.includes("powered by")) f.remove();
-          });
-        };
-  
-        kill();
-        setInterval(kill, 1000); // keep it hidden after re-renders
-      });# Upptime also supports notifications, assigning issues, and more
+    window.addEventListener("load", () => {
+      const kill = () => {
+        // 1) Remove incident sections by heading text
+        document.querySelectorAll("section").forEach((s) => {
+          const h = s.querySelector("h2,h3");
+          const t = (h?.textContent || "").toLowerCase();
+          if (t.includes("active incidents") || t.includes("past incidents")) s.remove();
+        });
+
+        // 2) Hide any nav links/tabs that include "Incidents"
+        document.querySelectorAll("a,button").forEach((el) => {
+          const t = (el.textContent || "").toLowerCase();
+          if (t.includes("incidents")) el.style.display = "none";
+        });
+
+        // 3) Remove the Upptime footer branding
+        document.querySelectorAll("footer").forEach((f) => {
+          const t = (f.textContent || "").toLowerCase();
+          if (t.includes("upptime") || t.includes("powered by")) f.remove();
+        });
+      };
+
+      kill();
+      setInterval(kill, 1000); // keep it hidden after re-renders
+    });
+
+# Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
