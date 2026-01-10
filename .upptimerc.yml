@@ -50,6 +50,25 @@ status-website:
       href: /
     - title: Website
       href: https://digintlab.com/
+  js: |
+    window.addEventListener("load", () => {
+      const kill = () => {
+        // Remove sections by heading text
+        document.querySelectorAll("section").forEach((s) => {
+          const h = s.querySelector("h2,h3");
+          const t = (h?.textContent || "").toLowerCase();
+          if (t.includes("active incidents") || t.includes("past incidents")) s.remove();
+        });
 
+        // Also hide any nav links/tabs that include "Incidents"
+        document.querySelectorAll("a,button").forEach((el) => {
+          const t = (el.textContent || "").toLowerCase();
+          if (t.includes("incidents")) el.style.display = "none";
+        });
+      };
+
+      kill();
+      setInterval(kill, 1000); // keeps it hidden after re-renders
+    });
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
