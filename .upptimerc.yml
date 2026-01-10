@@ -24,10 +24,12 @@ sites:
     url: https://api.eu-ep1.doubleextortion.com/v1/
     expectedStatusCodes:
       - 403
+    __dangerous__body_down_if_text_missing: '"Missing Authentication Token"'
   - name: Platform Secondary API Endpoint (prod)
     url: https://api.eu-ep1b.doubleextortion.com/v1/
     expectedStatusCodes:
       - 403
+    __dangerous__body_down_if_text_missing: '"Missing Authentication Token"'
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
