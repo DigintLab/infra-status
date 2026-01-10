@@ -68,3 +68,7 @@ button:hover, .button:hover, a.button:hover {
 svg text {
   fill: #ffffff !important;
 }
+
+footer { display: none !important; }
+
+
