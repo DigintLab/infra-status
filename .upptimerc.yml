@@ -16,17 +16,22 @@ workflowSchedule:
 sites:
   - name: Company Website
     url: https://doubleextortion.com
+    slug: company-website
   - name: Platform Frontend
     url: https://app.doubleextortion.com
+    slug: app-prod-fronted
   - name: Platform Authentication Endpoint (prod)
     url: https://auth.eu-ep1.doubleextortion.com
+    slug: app-prod-auth
   - name: Platform Primary API Endpoint (prod)
     url: https://api.eu-ep1.doubleextortion.com/v1/
+    slug: app-prod-api-eu-primary
     expectedStatusCodes:
       - 403
     __dangerous__body_down_if_text_missing: '"Missing Authentication Token"'
   - name: Platform Secondary API Endpoint (prod)
     url: https://api.eu-ep1b.doubleextortion.com/v1/
+    slug: app-prod-api-eu-secondary
     expectedStatusCodes:
       - 403
     __dangerous__body_down_if_text_missing: '"Missing Authentication Token"'
