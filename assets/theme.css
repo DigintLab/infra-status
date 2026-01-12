@@ -81,3 +81,12 @@ svg text {
 }
 
 footer { display: none !important; }
+
+/* Upptime response-time / uptime charts */
+svg g path[fill]:not([fill="none"]) {
+  fill: var(--c4) !important;
+}
+
+svg g path[stroke] {
+  stroke: var(--c4) !important;
+}
