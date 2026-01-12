@@ -44,9 +44,9 @@ status-website:
   logoUrl: https://status.digintlab.com/logow.svg
   favicon: https://status.digintlab.com/favicon.png
   faviconSvg: https://status.digintlab.com/favicon.svg
-  name: DEP Infrastructure Status
-  introTitle: "Double Extortion platform infrastructure status monitoring"
-  introMessage: Status page tracking DE platform availability.
+  name: Infrastructure Status
+  introTitle: "Platform infrastructure status"
+  introMessage: Status page tracking platform availability.
   themeUrl: https://status.digintlab.com/theme.css
   navbar:
     - title: Status
