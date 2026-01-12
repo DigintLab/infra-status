@@ -41,7 +41,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.digintlab.com
   # baseUrl: /your-repo-name
-  logoUrl: https://app.doubleextortion.com/logow.svg
+  logoUrl: https://status.digintlab.com/logow.svg
   favicon: https://status.digintlab.com/favicon.png
   faviconSvg: https://status.digintlab.com/favicon.svg
   name: DEP Infrastructure Status
