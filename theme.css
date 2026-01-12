@@ -7,10 +7,9 @@
   --c4: #a05b5b; /* secondary accent */
 
   /* Base */
-  background-color: var(--c0);
   color: #ffffff;
 
-  /* Sensible defaults used across the site */
+  /* Site vars */
   --background: var(--c0);
   --card-background: var(--c1);
   --text: #ffffff;
@@ -22,15 +21,32 @@
   --link: var(--c4);
 }
 
-/* Page background */
-body {
-  background: var(--c0) !important;
-  color: #ffffff !important;
+/* ✅ Gradient page background (grey -> surface tint) */
+html, body {
+  min-height: 100%;
 }
 
-/* Cards / panels */
-main, section, .container, .card, .box, .markdown, .shadow {
-  background: var(--c1) !important;
+body {
+  color: #ffffff !important;
+
+  /* nice “shaded” background */
+  background:
+    radial-gradient(1200px 700px at 50% -10%, rgba(37, 0, 0, 0.55), rgba(37, 0, 0, 0) 60%),
+    linear-gradient(180deg, var(--c0) 0%, #1b1a1a 35%, rgba(37, 0, 0, 0.35) 70%, var(--c0) 100%) !important;
+
+  background-attachment: fixed;
+}
+
+/* ✅ Make the big wrapper transparent so the gradient shows */
+main, section, .container, .markdown, .shadow {
+  background: transparent !important;
+  border-color: rgba(201, 177, 177, 0.20) !important;
+}
+
+/* ✅ Cards / panels become the “surface” */
+.card, .box {
+  background: rgba(37, 0, 0, 0.78) !important; /* surface with some translucency */
+  backdrop-filter: blur(3px);
   border-color: rgba(201, 177, 177, 0.20) !important;
 }
 
@@ -70,5 +86,3 @@ svg text {
 }
 
 footer { display: none !important; }
-
-
