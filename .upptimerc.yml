@@ -41,7 +41,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.digintlab.com
   # baseUrl: /your-repo-name
-  logoUrl: https://doubleextortion.com/wp-content/uploads/logo-deplatform.png
+  logoUrl: https://app.doubleextortion.com/logo.svg
   name: DEP Infrastructure Status
   introTitle: "Double Extortion platform infrastructure status monitoring"
   introMessage: Status page tracking DE platform availability.
