@@ -27,13 +27,8 @@ html, body {
 }
 
 body {
-  color: #ffffff !important;
-
-  /* nice “shaded” background */
-  background:
-    radial-gradient(1200px 700px at 50% -10%, rgba(37, 0, 0, 0.55), rgba(37, 0, 0, 0) 60%),
-    linear-gradient(180deg, var(--c0) 0%, #1b1a1a 35%, rgba(37, 0, 0, 0.35) 70%, var(--c0) 100%) !important;
-
+  color: #fff !important;
+  background: linear-gradient(180deg, var(--c0) 0%, var(--c1) 100%) !important;
   background-attachment: fixed;
 }
 
