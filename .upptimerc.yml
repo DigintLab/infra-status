@@ -11,7 +11,7 @@ workflowSchedule:
   summary: "0 0 * * *"
   updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
-  uptime: "*/59 * * * *"
+  uptime: "0 */2 * * *" # Every 2 hours (UTC)
 
 sites:
   - name: Company Website
