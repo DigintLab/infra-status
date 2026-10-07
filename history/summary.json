@@ -79,9 +79,9 @@
     "url": "https://api.eu-ep1b.doubleextortion.com/v1/",
     "icon": "https://icons.duckduckgo.com/ip3/api.eu-ep1b.doubleextortion.com.ico",
     "slug": "platform-secondary-api-endpoint-prod",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -90,6 +90,8 @@
     "timeWeek": 318,
     "timeMonth": 314,
     "timeYear": 320,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-10-07": 0
+    }
   }
 ]
